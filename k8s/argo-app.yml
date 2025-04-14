@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: weatherapp
+  namespace: argocd
+spec:
+  destination:
+    name: ''
+    namespace: default  # Change to your desired namespace
+  source:
+    repoURL: 'https://github.com/youruser/weatherapp-k8s.git'  # Replace with your repository URL
+    targetRevision: HEAD
+    path: weatherapp-k8s  # Path to your Kubernetes files in the repo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
