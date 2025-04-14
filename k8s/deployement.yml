@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: weatherapp
-          image: bassma/weatherapp:latest
+          image: bassma/weatherapp:v1.0
           ports:
             - containerPort: 5000
