@@ -57,7 +57,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 		<!DOCTYPE html>
 		<html>
 		<head>
-			<title>Weather App</title>
+			<title>Test Weather App</title>
 			<style>
 				body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
 				.weather-card { background: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
