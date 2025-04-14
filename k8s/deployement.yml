@@ -1,12 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: argocd
-  name: weatherapp-deployment
-  labels:
-    app: weatherapp
+  name: weatherapp
+  namespace: myapp
 spec:
-  replicas: 3  # Number of replicas for your app
+  replicas: 1
   selector:
     matchLabels:
       app: weatherapp
@@ -16,7 +14,7 @@ spec:
         app: weatherapp
     spec:
       containers:
-      - name: weatherapp
-        image: bassma/weatherapp:latest  
-        ports:
-        - containerPort: 5000  
+        - name: weatherapp
+          image: bassma/weatherapp:latest
+          ports:
+            - containerPort: 5000
