@@ -14,7 +14,7 @@ This repository hosts a simple web application for tracking weather using GO.
 1. **Clone the repository and navigate to the project directory:**
 
    ```bash
-   git clone https://github.com/bassma-khaled14/Weather-App.git
+   git clone https://github.com/bassma-khaled14/Argocd-Demo-Project.git
    cd Weather-App
    ```
 3. **Install dependencies:**
