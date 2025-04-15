@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/bassma-khaled14/Weather-App.git
+    repoURL: https://github.com/bassma-khaled14/Argocd-Demo-Project.git
     targetRevision: HEAD
     path: k8s
   destination:
