@@ -20,7 +20,7 @@ cd Weather-App
 **1.** **Install dependencies:**
 
 ```bash
-   go mid tidy
+go mid tidy
 ```
 Set up Docker on your machine
 ```bash
@@ -47,28 +47,29 @@ go run main
 ```
 The application will be accessible at `http://localhost:8081`.
 ### Tests
-   **2.** **Run test:**
-      ````bash
-      go test
-      ````
-      This ensures all functionalities are working correctly.
+
+ **2.** **Run test:**
+````bash
+go test
+````
+This ensures all functionalities are working correctly.
 
 ### Running the application in Docker
-   **1.** **Login With Docker**
-   ````bash
-      docker login username
-   ````
-  enter your username on dockerhub
+**1.** **Login With Docker**
+````bash
+docker login username
+````
+enter your username on dockerhub
    
-   **2.** **Pull Image From DockerHub**
+**2.** **Pull Image From DockerHub**
     
-   ````bash
-      docker pull bassma/weather-app:latest
-   ````
-   **3.** **Run Docker Container**
-   ````bash
-      docker run -p 5000:8080 --name appcontainer bassma/weather-app:latest
-   ````
+````bash
+docker pull bassma/weather-app:latest
+````
+**3.** **Run Docker Container**
+````bash
+docker run -p 5000:8080 --name appcontainer bassma/weather-app:latest
+````
 application will be accessible at http://127.0.0.1:5000
 
 ### Minikube Deployment
