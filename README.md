@@ -107,7 +107,7 @@ kubectl describe pod  -n <namespace>
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
-**1.** ### Access the Argo CD UI
+**1.** **Access the Argo CD UI**
 Port-forward the Argo CD API server to your local machine:
 ```bash 
 kubectl port-forward svc/argocd-server -n argocd 8080:80
